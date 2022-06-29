@@ -1,5 +1,6 @@
 html, body, #home{
     height: 100%;
+    overflow-x: hidden;
 }
 nav{
     padding: 15px 0;
@@ -38,6 +39,16 @@ h1{
     letter-spacing: -0.05em;
     margin-bottom: 50px;
     color: white;
+}
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
 }
 
 @media (min-width: 576px) { 
@@ -78,7 +89,7 @@ h1{
     -moz-border-radius: 500px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
-    padding: 10px 15px;
+    padding: 10px 20px;
 }
 .btn-branco{
     border: 2px solid white;
@@ -94,3 +105,37 @@ h1{
     background: #6207e3;
     color: white;
 }
+@media (max-width: 768px) {
+    .btn-custom{
+        padding: 10px 15px;
+        margin: 10px 0;
+    }
+ }
+
+ #servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ #servicos h2, h3{
+    color: #7c25f8;
+ }
+ .albuns{
+    padding: 15px 0;
+ }
+ #recursos h2, p{
+    color: white;
+ }
+ #recursos h3{
+    color: #9bf0e1;
+ }
+ #recursos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ .rotacionar{
+     -ms-transform:rotate(30deg);
+     -webkit-transform: rotate(30deg);
+     transform: rotate(30deg);
+     padding-left: 80px;
+ }
